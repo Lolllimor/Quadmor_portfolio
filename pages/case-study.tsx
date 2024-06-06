@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import { IoMdOpen } from "react-icons/io";
 
 const CaseStudy = () => {
-
-  
   const data = [
     {
       type: "App Redesign 2024 ",
@@ -71,7 +69,7 @@ const CaseStudy = () => {
     });
   };
   return (
-    <Flex className='mx-auto grid grid-cols-3  pt-[60px] gap-[50px] pb-[248px] '>
+    <Flex className="flex pt-[60px] gap-[88px] pb-[248px] flex-wrap">
       {data.map((item, idx) => (
         <div
           onMouseEnter={() => handleMouseEnter(idx)}
@@ -82,24 +80,22 @@ const CaseStudy = () => {
               key={idx}
               src={item.imgSrc}
               alt={`Image for ${item.name}`}
-              className='rounded-[8px] w-[387px] h-[285px]'
+              className="rounded-[8px] w-[387px] h-[285px]"
             />
           ) : (
             <div className=' flex  justify-center gap-[24px] h-[285px] items-center flex-col border-[1px] w-[387px]  border-white rounded-[8px] '>
-              <div className='flex flex-col justify-center items-center'>
-                <p className='text-[20px] tracking-[1.4px] font-[500]'>
+              <div className="flex flex-col justify-center items-center" >
+                <Text className="text-[20px] tracking-[1.4px] font-[500]">
                   {item.type.toUpperCase()}
-                </p>
-                <div className='h-[1px] w-[10%] bg-white my-[13px] border-0'></div>
-                <p className='text-[24px] font-[500] '>{item.name}</p>
+                </Text>
+                <div className="h-[1px] w-[10%] bg-white my-[13px] border-0"></div>
+                <Text className="text-[24px] font-[500] ">{item.name}</Text>
               </div>
-              <Button className='h-[56px] w-[133px] rounded-[37px] bg-white '>
-                <div className='items-center justify-center flex gap-[5px]'>
-                  <p className='text-[16px] font-[600] text-black'>
-                    Open
-                  </p>
-                  <IoMdOpen color='#000' size={24} />
-                </div>
+              <Button className="h-[56px] w-[133px] rounded-[37px] bg-white ">
+								<div className="items-center justify-center flex gap-[5px]">
+                <Text className="text-[16px] font-[600] text-black">Open</Text>
+                <IoMdOpen color="#000" size={24} />
+								</div>
               </Button>
             </div>
           )}

@@ -11,67 +11,71 @@ export const Navbar = () => {
   const [route, setRoute] = usePortal.atom(selectedRouteAtom);
   return (
     <div className="flex justify-between items-center pb-[32px] border-b-[1px] border-white w-[100%] ">
-      <img
-        src="/images/sig.png"
-        onClick={() => {
-          setRoute("home");
-          push("/");
-        }}
-      />
-      <div className="flex w-[460px] justify-between max-[1100px]:hidden">
-        <span
-          className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
-            route === "case" && "font-[700]"
-          }`}
+      <div className="flex w-full justify-between items-center">
+        <img
+          className="max-[800px]:h-[21px]"
+          src="/images/sig.png"
           onClick={() => {
-            setRoute("case");
+            setRoute("home");
             push("/");
           }}
-        >
-          Case Studies
-        </span>
-        <span
-          className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
-            route === "profile" && "font-[700]"
-          }`}
-          onClick={() => {
-            setRoute("profile");
-            push("/");
-          }}
-        >
-          Profile
-        </span>
-        <span
-          className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
-            route === "gallery" && "font-[700]"
-          }`}
-          onClick={() => {
-            setRoute("gallery");
-            push("/");
-          }}
-        >
-          Gallery
-        </span>
-        <span
-          className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
-            route === "works" && "font-[700]"
-          }`}
-          onClick={() => {
-            setRoute("works");
-            push("/");
-          }}
-        >
-          Works
-        </span>
+        />
+        <div className="flex w-[460px] justify-between max-[1100px]:hidden">
+          <span
+            className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+              route === "case" && "font-[700]"
+            }`}
+            onClick={() => {
+              setRoute("case");
+              push("/");
+            }}
+          >
+            Case Studies
+          </span>
+          <span
+            className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+              route === "profile" && "font-[700]"
+            }`}
+            onClick={() => {
+              setRoute("profile");
+              push("/");
+            }}
+          >
+            Profile
+          </span>
+          <span
+            className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+              route === "gallery" && "font-[700]"
+            }`}
+            onClick={() => {
+              setRoute("gallery");
+              push("/");
+            }}
+          >
+            Gallery
+          </span>
+          <span
+            className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+              route === "works" && "font-[700]"
+            }`}
+            onClick={() => {
+              setRoute("works");
+              push("/");
+            }}
+          >
+            Works
+          </span>
+        </div>
+        <Button className="bg-[#fff] text-[#000] rounded-[37px] h-[52px] px-[24px] max-[1100px]:hidden">
+          <p className="text-[16px] font-[700] "> View Resume</p>
+        </Button>
       </div>
-      <Button className="bg-[#fff] text-[#000] rounded-[37px] h-[52px] px-[24px] max-[1100px]:hidden">
-        <p className="text-[16px] font-[700] "> View Resume</p>
-      </Button>
+
       <div className="min-[1100px]:hidden">
         <Menu classNames={{ dropdown: "border-0 border-none" }}>
           <Menu.Target>
             <span>
-              <IoMenu size={40} />
+              <IoMenu size={30} />
             </span>
           </Menu.Target>
           <Menu.Dropdown>

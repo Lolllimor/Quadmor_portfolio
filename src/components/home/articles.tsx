@@ -32,14 +32,15 @@ export const Articles = () => {
   ];
 
   return (
-    <div className='pt-[69px] pb-[249px]'>
-      <div className='flex flex-row justify-start items-center'>
-        <p className='text-[32px] font-[500]'> Articles</p>
-        <div>
- 
-        </div>
+    <div className="pt-[69px] pb-[249px] max-[800px]:pt-[34px] max-[800px]:pb-[124px]">
+      <div className="flex flex-row justify-start items-center  ">
+        <p className="text-[32px] font-[500] max-[800px]:text-[12px]">
+          {" "}
+          Articles
+        </p>
+        <div></div>
       </div>
-      <div className='pt-[40px] gap-[40px] flex overflow-x-auto no-scrollbar'>
+      <div className="pt-[40px] gap-[40px] flex overflow-x-auto no-scrollbar w-full">
         {articleData.map((item, idx) => (
           <ArticleCard
             key={idx}

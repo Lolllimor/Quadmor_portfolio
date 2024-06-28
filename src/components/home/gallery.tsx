@@ -41,8 +41,8 @@ export const Gallery = () => {
   ];
 
   return (
-    <div className="pb-[58px] border-b-[1px] border-white ">
-      <p className="text-white text-[24px] font-[500] pb-[40px]">
+    <div className="pb-[58px] border-b-[1px] border-white max-[800px]:pb-[30px]">
+      <p className="text-white text-[24px] font-[500] pb-[40px] max-[800px]:text-[12px]">
         GALLERY PREVIEW
       </p>
       <div className="flex overflow-x-auto space-x-[-150px] no-scrollbar">

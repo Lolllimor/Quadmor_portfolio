@@ -14,7 +14,7 @@ export const ArticleCard = ({
   return (
     <Link
       href={`article/${topic.toLocaleLowerCase()}`}
-      className="max-[800px]:w-[208px] max-[800px]:min-w-[208px] max-[800px]:h-[194px] w-[418px] h-[391px] p-[32px] max-[800px]:p-[14px] border border-white max-[800px]:rounded-[11px] rounded-[24px] flex flex-col"
+      className="max-[800px]:w-[208px] max-[800px]:min-w-[208px] max-[800px]:h-[194px] w-[418px] h-[391px] min-w-[387px] p-[32px] max-[800px]:p-[14px] border border-white max-[800px]:rounded-[11px] rounded-[24px] flex flex-col"
     >
       <p className="text-base font-[500] max-[800px]:text-[8px]">{name}</p>
       <div className="pt-[40px] gap-[16px] flex flex-col mb-auto  max-[800px]:pt-[5px]">

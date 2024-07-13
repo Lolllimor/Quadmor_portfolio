@@ -45,28 +45,28 @@ export const SelectedWork = () => {
     });
   };
 
-   const [size, setSize] = useState<number | undefined>(undefined);
+  const [size, setSize] = useState<number | undefined>(undefined);
 
-   useEffect(() => {
-     if (typeof window !== "undefined") {
-       const handleResize = () => setSize(window.innerWidth);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const handleResize = () => setSize(window.innerWidth);
 
-       // Set the initial size
-       handleResize();
+      // Set the initial size
+      handleResize();
 
-       // Add event listener
-       window.addEventListener("resize", handleResize);
+      // Add event listener
+      window.addEventListener("resize", handleResize);
 
-       // Cleanup event listener on component unmount
-       return () => {
-         window.removeEventListener("resize", handleResize);
-       };
-     }
-   }, []);
+      // Cleanup event listener on component unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
 
   return (
     <div className="mt-[32px] w-full max-[800px]:mt-[8px]">
-      <div className="pb-[40px] max-[800px]:pb-[20px] max-[800px]: flex max-[800px]">
+      <div className="pb-[40px] max-[800px]:pb-[20px] max-[800px]: flex max-[800px] justify-between items-center">
         <p className="text-white text-[24px] font-[500] max-[800px]:text-[12px]">
           SELECTED WORKS
         </p>
@@ -79,7 +79,7 @@ export const SelectedWork = () => {
         {data.map((item, idx) => (
           <div
             key={idx}
-            className="flex flex-col justify-center items-center w-[387px] h-[387px] max-[800px]:h-[196px] max-[800px]:w-[196px] hover:border-0 hover:rounded-[8px] border-[1px] max-[800px]:border-0 border-white"
+            className="flex flex-col justify-center items-center max-[1024px]:min-w-[387px] h-[387px] max-[800px]:h-[196px] max-[800px]:min-w-[196px] hover:border-0 hover:rounded-[8px] border-[1px] max-[800px]:border-0 border-white"
             onMouseEnter={() => handleMouseEnter(idx)}
             onMouseLeave={() => handleMouseLeave(idx)}
           >

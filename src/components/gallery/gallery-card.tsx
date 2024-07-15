@@ -20,7 +20,6 @@ export const GalleryCard = ({
 
   return (
     <>
-      {" "}
       <div
         onClick={open}
         className={` w-[443px] h-[624px] max-[800px]:w-[352px] max-[800px]:h-[496px] brightness-50 relative hover:brightness-100 flex  contain rounded-[24px] overflow-hidden transition-transform transform hover:z-20 hover:border-white hover:border-[2px] ${classname}`}

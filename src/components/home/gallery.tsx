@@ -1,4 +1,4 @@
-import { Text } from "@mantine/core";
+
 import { GalleryCard } from "../gallery/gallery-card";
 
 export const Gallery = () => {

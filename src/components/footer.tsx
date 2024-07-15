@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div className="p-[24px] max-[800px]:p-0 flex flex-col w-full h-full max-[800px]:mb-[20px]">
       <div className="flex  max-[800px]:flex-col justify-between h-[300px] max-[800px]:h-full max-[800px]:gap-[24px] max-[800px]:pb-[40px] border-b-[1px] border-white">
-        <div className="flex gap-[160px] max-[800px]:gap-6 max-[800px]:flex-col max-[800px]:h-fit h-[300px] ">
+        <div className="flex gap-[160px] max-[800px]:gap-6 max-[800px]:flex-col max-[800px]:h-fit h-[300px] max-[1024px]:gap-[100px] ">
           <div className="flex flex-col gap-[8px]">
             <p className="text-[20px] font-[700] max-[800px]:text-[16px] ">
               Quadri Morin

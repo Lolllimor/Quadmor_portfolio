@@ -72,16 +72,18 @@ export const Navbar = () => {
       </div>
 
       <div className="min-[1100px]:hidden">
-        <Menu classNames={{ dropdown: "border-0 border-none" }}>
+        <Menu
+          classNames={{ dropdown: "border border-white p-0  ", item:"hover:bg-[#f0f0f0]" }}
+        >
           <Menu.Target>
             <span>
               <IoMenu size={30} />
             </span>
           </Menu.Target>
           <Menu.Dropdown>
-            <div className="flex flex-col gap-[15px] bg-[#2B2C2E] border border-[#fff]  py-4 px-6 w-[163px]">
+            <div className="flex flex-col gap-[8px] bg-[#2B2C2E] py-[14px] px-[12px] w-fit ">
               <span
-                className={`text-[16px] font-[500] cursor-pointer active:font-[700] pb-2 border-b borber-b-[#fff] ${
+                className={`text-[12px] font-[500] cursor-pointer active:font-[700] pb-2 border-b borber-b-[#fff] ${
                   route === "case" && "font-[700]"
                 }`}
                 onClick={() => {
@@ -92,7 +94,7 @@ export const Navbar = () => {
                 Case Studies
               </span>
               <span
-                className={`text-[16px] font-[500] cursor-pointer active:font-[700]  pb-2 border-b borber-b-[#fff]  ${
+                className={`text-[12px] font-[500] cursor-pointer active:font-[700]  pb-2 border-b borber-b-[#fff]  ${
                   route === "profile" && "font-[700]"
                 }`}
                 onClick={() => {
@@ -103,7 +105,7 @@ export const Navbar = () => {
                 Profile
               </span>
               <span
-                className={`text-[16px] font-[500] cursor-pointer active:font-[700]  pb-2 border-b borber-b-[#fff] ${
+                className={`text-[12px] font-[500] cursor-pointer active:font-[700]  pb-2 border-b borber-b-[#fff] ${
                   route === "gallery" && "font-[700]"
                 }`}
                 onClick={() => {
@@ -114,7 +116,7 @@ export const Navbar = () => {
                 Gallery
               </span>
               <span
-                className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+                className={`text-[12px] font-[500] cursor-pointer active:font-[700] ${
                   route === "works" && "font-[700]"
                 }`}
                 onClick={() => {

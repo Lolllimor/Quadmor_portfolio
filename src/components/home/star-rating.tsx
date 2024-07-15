@@ -10,9 +10,25 @@ const StarRating = ({ value, totalStars }: {value: number, totalStars: number}) 
   }, [value]);
 
   return (
-    <div className='flex'>
+    <div className="flex">
       {stars.map((filled, index) => (
-        <span key={index}>{filled ? <img height={24} width={24} src='./images/star.png'/> : <img height={24} width={24} src='./images/empty_star.png'/>}</span>
+        <span key={index}>
+          {filled ? (
+            <img
+              height={24}
+              width={24}
+              src="./images/star.png"
+              className="max-[800px]:w-[16px]"
+            />
+          ) : (
+            <img
+              height={24}
+              width={24}
+              src="./images/empty_star.png"
+              className="max-[800px]:w-[16px]"
+            />
+          )}
+        </span>
       ))}
     </div>
   );

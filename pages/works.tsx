@@ -31,7 +31,7 @@ const Works = () => {
               <div
                 onMouseEnter={() => setIsHovered1(true)}
                 onMouseLeave={() => setIsHovered1(false)}
-                className=" max-[1024px]:w-[250px] max-[1024px]:rounded-[24px] w-[290px] max-[721px]:w-[132px] max-[721px]:h-[171px] max-[721px]:rounded-[11px] p-[32px] flex flex-col justify-between max-[1024px]:p-[15px] items-end h-[431px] border border-[#fff] rounded-[32px] max-[721px]:p-2.5 min-w-[292px] max-[1024px]:min-w-[100px] max-[1024px]:h-[300px] max-[1024px]:w-[213px]  max-[954px]:h-[250px] max-[954px]:w-[180px]"
+                className=" max-[1024px]:w-[250px] max-[1024px]:rounded-[24px] w-[290px] max-[721px]:w-[132px] max-[721px]:h-[171px] max-[721px]:rounded-[11px] p-[32px] flex flex-col justify-between max-[1024px]:p-[15px] items-end h-[431px] border border-[#fff] rounded-[32px] max-[721px]:p-2.5 min-w-[292px] max-[1024px]:min-w-[100px] max-[1024px]:h-[300px] max-[954px]:h-[250px] max-[954px]:w-[180px]"
               >
                 <div className={`opacity-0 ${isHovered1 && "opacity-100"}`}>
                   <IoMdOpen
@@ -58,13 +58,13 @@ const Works = () => {
               <div
                 onMouseEnter={() => setIsHovered2(true)}
                 onMouseLeave={() => setIsHovered2(false)}
-                className="max-[1024px]:p-[15px] max-[1024px]:rounded-[24px] max-[1024px]:w-[250px] w-[290px] max-[721px]:w-[132px] max-[721px]:h-[171px] max-[721px]:rounded-[11px] p-[32px] flex flex-col justify-between items-end h-[431px] border border-[#fff] rounded-[32px] max-[721px]:p-2.5 min-w-[292px] max-[1024px]:min-w-[100px] max-[1024px]:h-[300px] max-[1024px]:w-[213px] max-[954px]:h-[250px] max-[954px]:w-[180px]"
+                className="max-[1024px]:p-[15px] max-[1024px]:rounded-[24px] max-[1024px]:w-[250px] w-[290px] max-[721px]:w-[132px] max-[721px]:h-[171px] max-[721px]:rounded-[11px] p-[32px] flex flex-col justify-between items-end h-[431px] border border-[#fff] rounded-[32px] max-[721px]:p-2.5 min-w-[292px] max-[1024px]:min-w-[100px] max-[1024px]:h-[300px]  max-[954px]:h-[250px] max-[954px]:w-[180px]"
               >
                 <div className={`opacity-0 ${isHovered2 && "opacity-100"}`}>
                   <IoMdOpen
                     color="#fff"
                     size={40}
-                    className="max-[1024px]:h-5"
+                    className="max-[721px]:w-[20px] max-[721px]:h-[20px]"
                   />
                 </div>
                 <div className=" max-[721px]:w-full max-[721px]:flex max-[721px]:items-start">
@@ -88,10 +88,14 @@ const Works = () => {
               <div
                 onMouseEnter={() => setIsHovered3(true)}
                 onMouseLeave={() => setIsHovered3(false)}
-                className="max-[1024px]:p-[15px] max-[1024px]:rounded-[24px] max-[1024px]:w-[250px] w-[290px] max-[721px]:w-[132px] max-[721px]:h-[171px] max-[721px]:rounded-[11px] p-[32px] flex flex-col justify-between items-end h-[431px] border border-[#fff] rounded-[32px] max-[721px]:p-2.5 min-w-[292px] max-[1024px]:min-w-[100px] max-[1024px]:h-[300px] max-[1024px]:w-[213px] max-[954px]:h-[250px] max-[954px]:w-[180px]"
+                className="max-[1024px]:p-[15px] max-[1024px]:rounded-[24px] max-[1024px]:w-[250px] w-[290px] max-[721px]:w-[132px] max-[721px]:h-[171px] max-[721px]:rounded-[11px] p-[32px] flex flex-col justify-between items-end h-[431px] border border-[#fff] rounded-[32px] max-[721px]:p-2.5 min-w-[292px] max-[1024px]:min-w-[100px] max-[1024px]:h-[300px]  max-[954px]:h-[250px] max-[954px]:w-[180px]"
               >
                 <div className={`opacity-0 ${isHovered3 && "opacity-100"}`}>
-                  <IoMdOpen color="#fff" size={40} />
+                  <IoMdOpen
+                    color="#fff"
+                    size={40}
+                    className="max-[721px]:w-[20px] max-[721px]:h-[20px]"
+                  />
                 </div>
                 <div className=" max-[721px]:w-full max-[721px]:flex max-[721px]:items-start">
                   {" "}
@@ -113,10 +117,14 @@ const Works = () => {
               <div
                 onMouseEnter={() => setIsHovered4(true)}
                 onMouseLeave={() => setIsHovered4(false)}
-                className="max-[1024px]:p-[15px] max-[1024px]:rounded-[24px] max-[1024px]:w-[250px] w-[290px] max-[721px]:w-[132px] max-[721px]:h-[171px] max-[721px]:rounded-[11px] p-[32px] flex flex-col justify-between items-end h-[431px] border border-[#fff] rounded-[32px] max-[721px]:p-2.5 min-w-[292px] max-[1024px]:min-w-[100px] max-[1024px]:h-[300px] max-[1024px]:w-[213px]  max-[954px]:h-[250px] max-[954px]:w-[180px]"
+                className="max-[1024px]:p-[15px] max-[1024px]:rounded-[24px] max-[1024px]:w-[250px] w-[290px] max-[721px]:w-[132px] max-[721px]:h-[171px] max-[721px]:rounded-[11px] p-[32px] flex flex-col justify-between items-end h-[431px] border border-[#fff] rounded-[32px] max-[721px]:p-2.5 min-w-[292px] max-[1024px]:min-w-[100px] max-[1024px]:h-[300px] max-[954px]:h-[250px] max-[954px]:w-[180px]"
               >
                 <div className={`opacity-0 ${isHovered4 && "opacity-100"}`}>
-                  <IoMdOpen color="#fff" size={40} />
+                  <IoMdOpen
+                    color="#fff"
+                    size={40}
+                    className="max-[721px]:w-[20px] max-[721px]:h-[20px]"
+                  />
                 </div>
                 <div className=" max-[721px]:w-full max-[721px]:flex max-[721px]:items-start">
                   <img

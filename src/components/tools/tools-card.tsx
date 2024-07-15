@@ -25,7 +25,7 @@ export const ToolsCard = ({
           src={imageSrc}
           width="48px"
           height="48px"
-          className="max-[800px]:w-[46px] max-[800px]:h-[46px]"
+          className="max-[800px]:w-[40px] max-[800px]:h-[40px]"
           alt={toolName}
         />
       </div>
@@ -37,12 +37,18 @@ export const ToolsCard = ({
       </Text>
 
       <div className="hidden group-hover:flex flex-col justify-between h-full">
-        <img src={colImage} width="88px" height="88px" alt={toolName} />
+        <img
+          src={colImage}
+          width="88px"
+          height="88px"
+          alt={toolName}
+          className="max-[800px]:w-[48px] max-[800px]:h-[48px]"
+        />
         <Flex className="flex-col ">
           <Flex className="">
             <StarRating value={stars} totalStars={5} />
           </Flex>
-          <p className="text-[20px] font-[500]">{noOfYears}+ Years</p>
+          <p className="text-[20px] font-[500] max-[800px]:text-[14px]">{noOfYears}+ Years</p>
         </Flex>
       </div>
     </div>

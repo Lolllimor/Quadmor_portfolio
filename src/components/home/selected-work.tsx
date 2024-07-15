@@ -109,7 +109,7 @@ export const SelectedWork = () => {
                 </Button>
               </Flex>
             ) : !hoveredItems[idx] ? (
-              <>
+              <div className="w-[387px] flex flex-col items-center">
                 <p className="text-[20px] tracking-[1.4px] font-[500] w-full text-center px-[5px]">
                   {item.type.toUpperCase()}
                 </p>
@@ -117,7 +117,7 @@ export const SelectedWork = () => {
                 <p className="text-[24px] font-[500]w-full text-center px-[5px]">
                   {item.name}
                 </p>
-              </>
+              </div>
             ) : (
               <Flex className="justify-between h-full items-center flex-col">
                 <img

@@ -54,18 +54,25 @@ const SubWork = () => {
   ];
 
   const ui = [
-    { name: "Pouchii Redesign", imgSrc: "/images/pouchii_full.png" },
     {
-      name: "COVERLY - A Cover Letter Generator",
-      imgSrc: "/images/coverly_full.png",
+      type: "App Redesign 2024 ",
+      name: "Pouchii Redesign",
+      imgSrc: "/images/pochi-bg.svg",
     },
     {
-      name: "Fintech Product Admin Dashboard Redesign",
-      imgSrc: "",
+      type: "COVERLY 2021",
+      name: "Cover Letter Generator",
+      imgSrc: "/images/coverly-bg.svg",
     },
     {
+      type: "Administrative Dashboard Redesign",
+      name: "Cover Letter Generator",
+      imgSrc: "/images/add.svg",
+    },
+    {
+      type: "Fundraising Website Redesign",
       name: "Fundraising Website Redesign",
-      imgSrc: "",
+      imgSrc: "/images/coming-soon.svg",
     },
   ];
   const illustrate = [
@@ -73,7 +80,7 @@ const SubWork = () => {
       title: "GOD’S EYE PROJECT",
       paragraph:
         "God’s Eye is a collection of  five art pieces, each of which presents a unique perspective on success stories from an aerial view. ",
-      img: "./images/hand.png",
+      img: "/images/hand.png",
       link: "https://www.behance.net/gallery/185031767/Gods-Eye",
     },
   ];
@@ -119,124 +126,110 @@ const SubWork = () => {
             <p className="max-[480px]:text-[10px]">{query.works}</p>
           </div>
         </div>
-        {size && size < 650 ? (
-          <div className="grid grid-cols-2 justify-evenly max-[433px]:flex max-[433px]:flex-col  ">
-            {query.works === "Graphics Design" &&
-              graphics.map((item, idx) => (
-                <div className="mb-[20px] max-[480px]:mb-[10px] flex flex-col gap-[10px]  items-center ">
-                  <div className="rounded-[16px] border  border-white w-fit h-fit max-[610px]:rounded-[12px] max-[565px]:rounded-[10px]">
+
+        <div className="flex flex-col gap-[48px] max-[650px]:gap-[20px] w-full pt-[40px]">
+          {query.works === "Graphics Design"
+            ? graphics.map((item, idx) =>
+                size && size < 650 ? (
+                  <div className="grid grid-cols-2 justify-evenly max-[433px]:flex max-[433px]:flex-col  ">
+                    <div className="mb-[20px] max-[480px]:mb-[10px] flex flex-col gap-[10px]  items-center ">
+                      <div className="rounded-[16px] border  border-white w-fit h-fit max-[610px]:rounded-[12px] max-[565px]:rounded-[10px]">
+                        <img
+                          className="  rounded-[16px] w-[200px] h-[200px] max-[610px]:w-[180px] max-[610px]:h-[180px] max-[610px]:rounded-[12px] max-[565px]:w-[150px] max-[565px]:h-[150px] max-[565px]:rounded-[10px] max-[480px]:h-[120px] max-[480px]:w-[120px]"
+                          src={item.img}
+                        />
+                      </div>
+                      <p className="text-[14px] font-[700] text-wrap w-[200px] max-[610px]:w-[180px] max-[565px]:text-[12px] max-[565px]:w-[150px] text-center max-[480px]:text-[10px]">
+                        {item.title}
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <div
+                    key={idx}
+                    className="w-full border border-[#fff] rounded-[80px] p-[50px] flex gap-[50px] max-[1024px]::p-[35px] max-[1024px]:rounded-[50px] max-[905px]:rounded-[40px] max-[905px]:p-[25px]"
+                  >
+                    <div className="flex flex-col justify-between w-full">
+                      <p className="pb-[16px] text-[48px] font-[700] max-[1024px]:text-[24px] max-[1024px]:pb-[12px] max-[905px]:pb-[8px] max-[905px]:text-[16px]">
+                        {item.title}
+                      </p>
+                      <div className="flex gap-[20px] flex-col">
+                        <p className="text-[20px] font-[500] max-[1024px]:text-[16px] max-[905px]:text-[12px]">
+                          {item.paragraph}
+                        </p>
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-[8px] cursor-pointer"
+                        >
+                          <p className="font-[600] text-[24px] max-[1024px]:text-[16px] max-[905px]:text-[12px]">
+                            Open
+                          </p>
+                          <CiShare1
+                            color="#fff"
+                            size={24}
+                            className="max-[1024px]:w-[16px] max-[905px]:w-[14px]"
+                          />
+                        </a>
+                      </div>
+                    </div>
                     <img
-                      className="  rounded-[16px] w-[200px] h-[200px] max-[610px]:w-[180px] max-[610px]:h-[180px] max-[610px]:rounded-[12px] max-[565px]:w-[150px] max-[565px]:h-[150px] max-[565px]:rounded-[10px] max-[480px]:h-[120px] max-[480px]:w-[120px]"
+                      className="w-[280px] h-[280px] rounded-[40px] max-[1024px]:w-[240px] max-[1024px]:h-[240px] max-[1024px]:rounded-[24px] max-[905px]:rounded-[16px] max-[905px]:w-[200px] max-[905px]:h-[200px]"
                       src={item.img}
                     />
                   </div>
-                  <p className="text-[14px] font-[700] text-wrap w-[200px] max-[610px]:w-[180px] max-[565px]:text-[12px] max-[565px]:w-[150px] text-center max-[480px]:text-[10px]">
-                    {item.title}
-                  </p>
+                )
+              )
+            : query.works === "UI / UX Design"
+            ? ui.map((item, idx) => (
+                <div className="w-full flex flex-col gap-5">
+                  <p className="text-[20px] font-[700]">{item.name}</p>
+                  <img
+                    key={idx}
+                    src={item.imgSrc}
+                    alt={`Image for ${item.name}`}
+                    className="rounded-[8px] w-full h-[full"
+                  />
+                </div>
+              ))
+            : illustrate.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="w-full border border-[#fff] rounded-[80px] p-[50px] flex gap-[50px] max-[1024px]::p-[35px] max-[1024px]:rounded-[50px] max-[905px]:rounded-[40px] max-[905px]:p-[25px]"
+                >
+                  <div className="flex flex-col justify-between w-full">
+                    <p className="pb-[16px] text-[48px] font-[700] max-[1024px]:text-[24px] max-[1024px]:pb-[12px] max-[905px]:pb-[8px] max-[905px]:text-[16px]">
+                      {item.title}
+                    </p>
+                    <div className="flex gap-[20px] flex-col">
+                      <p className="text-[20px] font-[500] max-[1024px]:text-[16px] max-[905px]:text-[12px]">
+                        {item.paragraph}
+                      </p>
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-[8px] cursor-pointer"
+                      >
+                        <p className="font-[600] text-[24px] max-[1024px]:text-[16px] max-[905px]:text-[12px]">
+                          Open
+                        </p>
+                        <CiShare1
+                          color="#fff"
+                          size={24}
+                          className="max-[1024px]:w-[16px] max-[905px]:w-[14px]"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <img
+                    className="w-[280px] h-[280px] rounded-[40px] max-[1024px]:w-[240px] max-[1024px]:h-[240px] max-[1024px]:rounded-[24px] max-[905px]:rounded-[16px] max-[905px]:w-[200px] max-[905px]:h-[200px]"
+                    src={item.img}
+                  />
                 </div>
               ))}
-          </div>
-        ) : (
-          <div className="flex flex-col gap-[48px] w-full pt-[40px]">
-            {query.works === "Graphics Design"
-              ? graphics.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="w-full border border-[#fff] rounded-[80px] p-[50px] flex gap-[50px] max-[1024px]::p-[35px] max-[1024px]:rounded-[50px] max-[905px]:rounded-[40px] max-[905px]:p-[25px]"
-                  >
-                    <div className="flex flex-col justify-between w-full">
-                      <p className="pb-[16px] text-[48px] font-[700] max-[1024px]:text-[24px] max-[1024px]:pb-[12px] max-[905px]:pb-[8px] max-[905px]:text-[16px]">
-                        {item.title}
-                      </p>
-                      <div className="flex gap-[20px] flex-col">
-                        <p className="text-[20px] font-[500] max-[1024px]:text-[16px] max-[905px]:text-[12px]">
-                          {item.paragraph}
-                        </p>
-                        <a
-                          href={item.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-[8px] cursor-pointer"
-                        >
-                          <p className="font-[600] text-[24px] max-[1024px]:text-[16px] max-[905px]:text-[12px]">
-                            Open
-                          </p>
-                          <CiShare1
-                            color="#fff"
-                            size={24}
-                            className="max-[1024px]:w-[16px] max-[905px]:w-[14px]"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <img
-                      className="w-[280px] h-[280px] rounded-[40px] max-[1024px]:w-[240px] max-[1024px]:h-[240px] max-[1024px]:rounded-[24px] max-[905px]:rounded-[16px] max-[905px]:w-[200px] max-[905px]:h-[200px]"
-                      src={item.img}
-                    />
-                  </div>
-                ))
-              : query.works === "UI / UX Design"
-              ? ui.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="w-full flex flex-col gap-[30px] mt-[10px]"
-                  >
-                    <p className="font-[700] text-[24px] leading-[29px]">
-                      {item.name}
-                    </p>
-                    <div className="w-full h-[370px] overflow-hidden rounded-[185px] ">
-                      <img
-                        src={item.imgSrc}
-                        className="h-full w-full object-cover "
-                        style={
-                          item.name === "Pouchii Redesign"
-                            ? { objectPosition: "30% 10%" }
-                            : item.name === "COVERLY - A Cover Letter Generator"
-                            ? { objectPosition: "30% 35%" }
-                            : {}
-                        }
-                      />
-                    </div>
-                  </div>
-                ))
-              : illustrate.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="w-full border border-[#fff] rounded-[80px] p-[50px] flex gap-[50px] max-[1024px]::p-[35px] max-[1024px]:rounded-[50px] max-[905px]:rounded-[40px] max-[905px]:p-[25px]"
-                  >
-                    <div className="flex flex-col justify-between w-full">
-                      <p className="pb-[16px] text-[48px] font-[700] max-[1024px]:text-[24px] max-[1024px]:pb-[12px] max-[905px]:pb-[8px] max-[905px]:text-[16px]">
-                        {item.title}
-                      </p>
-                      <div className="flex gap-[20px] flex-col">
-                        <p className="text-[20px] font-[500] max-[1024px]:text-[16px] max-[905px]:text-[12px]">
-                          {item.paragraph}
-                        </p>
-                        <a
-                          href={item.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-[8px] cursor-pointer"
-                        >
-                          <p className="font-[600] text-[24px] max-[1024px]:text-[16px] max-[905px]:text-[12px]">
-                            Open
-                          </p>
-                          <CiShare1
-                            color="#fff"
-                            size={24}
-                            className="max-[1024px]:w-[16px] max-[905px]:w-[14px]"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <img
-                      className="w-[280px] h-[280px] rounded-[40px] max-[1024px]:w-[240px] max-[1024px]:h-[240px] max-[1024px]:rounded-[24px] max-[905px]:rounded-[16px] max-[905px]:w-[200px] max-[905px]:h-[200px]"
-                      src={item.img}
-                    />
-                  </div>
-                ))}
-          </div>
-        )}
+        </div>
 
         <div className="mt-[90px] flex justify-start items-start w-full">
           <Footer />

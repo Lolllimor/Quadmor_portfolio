@@ -1,39 +1,38 @@
-
 import { GalleryCard } from "../gallery/gallery-card";
 
 export const Gallery = () => {
   const galleryImages = [
     {
-      hover: "./images/full-flower.jpeg",
-      imageSrc: "./images/flowers.jpeg",
+      hover: "/images/full-flower.jpeg",
+      imageSrc: "/images/flowers.jpeg",
       title: "Soulful Sunflower",
       month: "August",
       year: "2022",
     },
     {
-      hover: "./images/full-kidda.jpeg",
-      imageSrc: "./images/kidda.jpeg",
+      hover: "/images/full-kidda.jpeg",
+      imageSrc: "/images/kidda.jpeg",
       title: "Kida Kudzz",
       month: "August",
       year: "2022",
     },
     {
-      hover: "./images/full-red.jpeg",
-      imageSrc: "./images/red.jpeg",
+      hover: "/images/full-red.jpeg",
+      imageSrc: "/images/red.jpeg",
       title: "Red (Action FIgure)",
       month: "August",
       year: "2022",
     },
     {
-      hover: "./images/full-bloom.png",
-      imageSrc: "./images/bloom.png",
+      hover: "/images/full-bloom.png",
+      imageSrc: "/images/bloom.png",
       title: "Bloom EOTP",
       month: "August",
       year: "2022",
     },
     {
-      hover: "./images/full-fat.jpeg",
-      imageSrc: "./images/fat.jpeg",
+      hover: "/images/full-fat.jpeg",
+      imageSrc: "/images/fat.jpeg",
       title: "Fat Mando",
       month: "August",
       year: "2022",

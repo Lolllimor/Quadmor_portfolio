@@ -1,6 +1,11 @@
-import { Text } from "@mantine/core";
+import { selectedRouteAtom } from "@/pages/api/query_store";
+import { usePortal } from "@ibnlanre/portal";
+import { useRouter } from "next/router";
 
 export const Footer = () => {
+  const { push } = useRouter();
+
+  const [route, setRoute] = usePortal.atom(selectedRouteAtom);
   return (
     <div className="p-[24px] max-[800px]:p-0 flex flex-col w-full h-full max-[800px]:mb-[20px]">
       <div className="flex  max-[800px]:flex-col justify-between h-[300px] max-[800px]:h-full max-[800px]:gap-[24px] max-[800px]:pb-[40px] border-b-[1px] border-white">
@@ -14,16 +19,48 @@ export const Footer = () => {
             </p>
           </div>
           <div className="flex flex-col gap-[8px]">
-            <p className="text-[20px] font-[700] max-[800px]:text-[16px]">
+            <p
+              className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+                route === "home" && "font-[700]"
+              }`}
+              onClick={() => {
+                setRoute("home");
+                push("/");
+              }}
+            >
               Home
             </p>
-            <p className="text-[16px] font-[500] max-[800px]:text-[12px]">
+            <p
+              className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+                route === "works" && "font-[700]"
+              }`}
+              onClick={() => {
+                setRoute("works");
+                push("/");
+              }}
+            >
               Works
             </p>
-            <p className="text-[16px] font-[500] max-[800px]:text-[12px]">
+            <p
+              className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+                route === "gallery" && "font-[700]"
+              }`}
+              onClick={() => {
+                setRoute("gallery");
+                push("/");
+              }}
+            >
               Gallery
             </p>
-            <p className="text-[16px] font-[500] max-[800px]:text-[12px]">
+            <p
+              className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+                route === "profile" && "font-[700]"
+              }`}
+              onClick={() => {
+                setRoute("profile");
+                push("/");
+              }}
+            >
               Profile
             </p>
           </div>
@@ -31,35 +68,65 @@ export const Footer = () => {
             <p className="text-[20px] font-[700] max-[800px]:text-[16px]">
               Connect
             </p>
-            <p className="text-[16px] font-[500] max-[800px]:text-[12px]">
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="              https://drive.usercontent.google.com/u/0/uc?id=18m4AO-PBBSi0Cyc0e7h_ZHEhpF_Z-2X5&export=download"
+              className="text-[16px] max-[800px]:text-[12px] font-[700]  "
+            >
               Download Resume
-            </p>
-            <p className="text-[16px] font-[500] max-[800px]:text-[12px]">
+            </a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href=" https://www.behance.net/quadrimorin"
+              className="text-[16px] max-[800px]:text-[12px] font-[700]  "
+            >
               Behance
-            </p>
-            <p className="text-[16px] font-[500] max-[800px]:text-[12px]">
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href=" https://dribbble.com/Quadmor"
+              className="text-[16px] max-[800px]:text-[12px] font-[700]  "
+            >
               Dribble
-            </p>
+            </a>
           </div>
         </div>
-        <div className="gap-[24px] flex">
+        <div className="gap-[24px] flex max-sm:gap-[6px]">
+          <a
+            href="https://www.instagram.com/quadmor/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              height={32}
+              width={32}
+              className="max-h-[32px] max-sm:h-[9px] max-sm:w-[9px]"
+              src="/images/insta.png"
+            />
+          </a>
+
           <img
-            className="max-h-[32px] max-[800px]:h-[25px]"
-            src="/images/insta.png"
-          />
-          <img
-            className="max-h-[32px] max-[800px]:h-[25px]"
+            height={32}
+            width={32}
+            className="max-h-[32px] max-sm:h-[9px] max-sm:w-[9px]"
             src="/images/twit.png"
           />
           <img
-            className="max-h-[32px] max-[800px]:h-[25px]"
+            height={32}
+            width={32}
+            className="max-h-[32px] max-sm:h-[9px] max-sm:w-[9px]"
             src="/images/link.png"
           />
         </div>
       </div>
       <div className="flex gap-[8px] pt-[36px] max-[800px]:hidden ">
         <img
-          src="./images/copywright.png"
+          src="/images/copywright.png"
           className="max-h-[16px]"
           height={16}
           width={16}

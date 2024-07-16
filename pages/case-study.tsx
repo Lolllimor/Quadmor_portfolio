@@ -7,22 +7,22 @@ const CaseStudy = () => {
     {
       type: "App Redesign 2024 ",
       name: "Pouchii Redesign",
-      imgSrc: "./images/pochi-bg.svg",
+      imgSrc: "/images/pochi-bg.svg",
     },
     {
       type: "COVERLY 2021",
       name: "Cover Letter Generator",
-      imgSrc: "./images/coverly-bg.svg",
+      imgSrc: "/images/coverly-bg.svg",
     },
     {
       type: "Administrative Dashboard Redesign",
       name: "Cover Letter Generator",
-      imgSrc: "./images/add.svg",
+      imgSrc: "/images/add.svg",
     },
     {
       type: "Fundraising Website Redesign",
       name: "Fundraising Website Redesign",
-      imgSrc: "./images/coming-soon.svg",
+      imgSrc: "/images/coming-soon.svg",
     },
   ];
 

@@ -7,47 +7,47 @@
 //     {
 //       type: "App Redesign 2024 ",
 //       name: "Pouchii Redesign",
-//       imgSrc: "./images/pochi-bg.svg",
+//       imgSrc: "/images/pochi-bg.svg",
 //     },
 //     {
 //       type: "COVERLY 2021",
 //       name: "Cover Letter Generator",
-//       imgSrc: "./images/coverly.png",
+//       imgSrc: "/images/coverly.png",
 //     },
 //     {
 //       type: "ART COLLECTION 2023",
 //       name: "God’s Eye",
-//       imgSrc: "./images/hand.png",
+//       imgSrc: "/images/hand.png",
 //     },
 //     {
 //       type: "App Redesign 2024 ",
 //       name: "Pouchii Redesign",
-//       imgSrc: "./images/pouchii.png",
+//       imgSrc: "/images/pouchii.png",
 //     },
 //     {
 //       type: "COVERLY 2021",
 //       name: "Cover Letter Generator",
-//       imgSrc: "./images/coverly.png",
+//       imgSrc: "/images/coverly.png",
 //     },
 //     {
 //       type: "ART COLLECTION 2023",
 //       name: "God’s Eye",
-//       imgSrc: "./images/hand.png",
+//       imgSrc: "/images/hand.png",
 //     },
 //     {
 //       type: "App Redesign 2024 ",
 //       name: "Pouchii Redesign",
-//       imgSrc: "./images/pouchii.png",
+//       imgSrc: "/images/pouchii.png",
 //     },
 //     {
 //       type: "COVERLY 2021",
 //       name: "Cover Letter Generator",
-//       imgSrc: "./images/coverly.png",
+//       imgSrc: "/images/coverly.png",
 //     },
 //     {
 //       type: "ART COLLECTION 2023",
 //       name: "God’s Eye",
-//       imgSrc: "./images/hand.png",
+//       imgSrc: "/images/hand.png",
 //     },
 //   ];
 

@@ -7,36 +7,36 @@ const Gallery = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const galleryImages = [
     {
-      hover: "./images/full-flower.jpeg",
-      imageSrc: "./images/flowers.jpeg",
+      hover: "/images/full-flower.jpeg",
+      imageSrc: "/images/flowers.jpeg",
       title: "Soulful Sunflower",
       month: "August",
       year: "2022",
     },
     {
-      hover: "./images/full-kidda.jpeg",
-      imageSrc: "./images/kidda.jpeg",
+      hover: "/images/full-kidda.jpeg",
+      imageSrc: "/images/kidda.jpeg",
       title: "Kida Kudzz",
       month: "August",
       year: "2022",
     },
     {
-      hover: "./images/full-red.jpeg",
-      imageSrc: "./images/red.jpeg",
+      hover: "/images/full-red.jpeg",
+      imageSrc: "/images/red.jpeg",
       title: "Red (Action FIgure)",
       month: "August",
       year: "2022",
     },
     {
-      hover: "./images/full-bloom.png",
-      imageSrc: "./images/bloom.png",
+      hover: "/images/full-bloom.png",
+      imageSrc: "/images/bloom.png",
       title: "Bloom EOTP",
       month: "August",
       year: "2022",
     },
     {
       hover: "/images/full-fat.jpeg",
-      imageSrc: "./images/fat.jpeg",
+      imageSrc: "/images/fat.jpeg",
       title: "Fat Mando",
       month: "August",
       year: "2022",
@@ -48,7 +48,7 @@ const Gallery = () => {
       <div className=" flex pb-[100px] mt-[30px] mx-auto justify-center overflow-auto flex-wrap gap-[50px] max-[637px]:gap-x-[20px] max-[637px]:gap-y-[25px] max-[637px]:mt-[30px]">
         {galleryImages.map((item, idx) => (
           <div
-            className="w-[387px] h-[528px] relative group max-[1024px]:w-[350px] max-[1024px]:h-[500px] max-[927px]:w-[300px]  max-[927px]:h-[450px] max-[825px]:w-[270px] max-[825px]:h-[430px] max-[637px]:w-[240px] max-[637px]:h-[400px] max-[547px]:w-[220px]   "
+            className="w-[387px] h-[528px] relative group max-[1024px]:w-[350px] max-[1024px]:h-[500px] max-[927px]:w-[300px]  max-[927px]:h-[450px] max-[825px]:w-[270px] max-[825px]:h-[430px] max-[637px]:w-[240px] max-[637px]:h-[400px] max-[547px]:w-[300px] max-[506px]:w-[240px] max-[506px]:h-[400px]   "
             key={idx}
           >
             <CiShare1
@@ -59,7 +59,7 @@ const Gallery = () => {
             />
             <img
               src={item.imageSrc}
-              className="w-[387px] h-[528px]  max-[1024px]:w-[350px] max-[1024px]:h-[500px] max-[927px]:w-[300px] max-[927px]:h-[450px] max-[825px]:w-[270px] max-[825px]:h-[430px] max-[637px]:w-[240px] max-[637px]:h-[400px] "
+              className="w-[387px] h-[528px]  max-[1024px]:w-[350px] max-[1024px]:h-[500px] max-[927px]:w-[300px] max-[927px]:h-[450px] max-[825px]:w-[270px] max-[825px]:h-[430px] max-[637px]:w-[240px] max-[637px]:h-[400px] max-[506px]:w-[300px] max-[506px]:h-[400px] "
             />
             <a
               href={item.hover}

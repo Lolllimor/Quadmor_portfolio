@@ -10,19 +10,19 @@ export const SelectedWork = () => {
     {
       type: "App Redesign 2024 ",
       name: "Pouchii Redesign",
-      imgSrc: "./images/pouchii.png",
+      imgSrc: "/images/pouchii.png",
       link: "https://www.behance.net/gallery/188111073/Pouchii-Redesign",
     },
     {
       type: "COVERLY 2021",
       name: "Cover Letter Generator",
-      imgSrc: "./images/coverly.png",
+      imgSrc: "/images/coverly.png",
       link: "https://www.behance.net/gallery/170646061/Cover-Letter-generator-Case-Study",
     },
     {
       type: "ART COLLECTION 2023",
       name: "God’s Eye",
-      imgSrc: "./images/hand.png",
+      imgSrc: "/images/hand.png",
       link: "https://www.behance.net/gallery/185031767/Gods-Eye",
     },
   ];

@@ -1,6 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-const StarRating = ({ value, totalStars }: {value: number, totalStars: number}) => {
+const StarRating = ({
+  value,
+  totalStars,
+}: {
+  value: number;
+  totalStars: number;
+}) => {
   const [stars, setStars] = useState(Array(totalStars).fill(false));
 
   useEffect(() => {
@@ -17,14 +23,14 @@ const StarRating = ({ value, totalStars }: {value: number, totalStars: number}) 
             <img
               height={24}
               width={24}
-              src="./images/star.png"
+              src="/images/star.png"
               className="max-[800px]:w-[16px]"
             />
           ) : (
             <img
               height={24}
               width={24}
-              src="./images/empty_star.png"
+              src="/images/empty_star.png"
               className="max-[800px]:w-[16px]"
             />
           )}

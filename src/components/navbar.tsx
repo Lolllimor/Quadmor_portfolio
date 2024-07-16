@@ -79,9 +79,11 @@ export const Navbar = () => {
 
       <div className="min-[1000px]:hidden">
         <Menu
+          position="bottom-end"
           classNames={{
-            dropdown: "border border-white p-0  ",
-            item: "hover:bg-[#f0f0f0]",
+            dropdown:
+              "border border-white rounded-0 py-[16px] px-[24px] bg-[#2B2C2E] gap-[22px] flex flex-col ",
+            item: "hover:bg-[#f0f0f0] w-full p-0 pb-[8px] pt-[8px] first:pt-0 ",
           }}
         >
           <Menu.Target>
@@ -90,9 +92,9 @@ export const Navbar = () => {
             </span>
           </Menu.Target>
           <Menu.Dropdown>
-            <div className="flex flex-col gap-[8px] bg-[#2B2C2E] py-[14px] px-[12px] w-fit ">
-              <span
-                className={`text-[12px] font-[500] cursor-pointer active:font-[700] pb-2 border-b borber-b-[#fff] ${
+            <Menu.Item>
+              <p
+                className={` font-["Montserrat"] text-[12px] text-white font-[500] cursor-pointer active:font-[700]  ${
                   route === "case" && "font-[700]"
                 }`}
                 onClick={() => {
@@ -101,9 +103,12 @@ export const Navbar = () => {
                 }}
               >
                 Case Studies
-              </span>
+              </p>
+            </Menu.Item>
+            <hr />
+            <Menu.Item>
               <span
-                className={`text-[12px] font-[500] cursor-pointer active:font-[700]  pb-2 border-b borber-b-[#fff]  ${
+                className={`font-["Montserrat"] text-[12px] font-[500] text-white  cursor-pointer active:font-[700]    ${
                   route === "profile" && "font-[700]"
                 }`}
                 onClick={() => {
@@ -113,8 +118,12 @@ export const Navbar = () => {
               >
                 Profile
               </span>
+            </Menu.Item>
+
+            <hr />
+            <Menu.Item>
               <span
-                className={`text-[12px] font-[500] cursor-pointer active:font-[700]  pb-2 border-b borber-b-[#fff] ${
+                className={`font-["Montserrat"] text-[12px] font-[500]  text-white cursor-pointer active:font-[700]  pb-2  ${
                   route === "gallery" && "font-[700]"
                 }`}
                 onClick={() => {
@@ -124,8 +133,13 @@ export const Navbar = () => {
               >
                 Gallery
               </span>
+            </Menu.Item>
+
+            <hr />
+            <Menu.Item>
+              {" "}
               <span
-                className={`text-[12px] font-[500] cursor-pointer active:font-[700] ${
+                className={`font-["Montserrat"] text-[12px] font-[500]  text-white cursor-pointer active:font-[700] ${
                   route === "works" && "font-[700]"
                 }`}
                 onClick={() => {
@@ -135,7 +149,7 @@ export const Navbar = () => {
               >
                 Works
               </span>
-            </div>
+            </Menu.Item>
           </Menu.Dropdown>
         </Menu>
       </div>

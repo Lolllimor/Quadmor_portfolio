@@ -83,7 +83,7 @@ export const Navbar = () => {
           classNames={{
             dropdown:
               "border border-white rounded-0 py-[16px] px-[24px] bg-[#2B2C2E] gap-[22px] flex flex-col ",
-            item: "hover:bg-[#f0f0f0] w-full p-0 pb-[8px] pt-[8px] first:pt-0 ",
+            item: "bg-tranparent hover:bg-transparent w-full p-0 pb-[8px] pt-[8px] first:pt-0 ",
           }}
         >
           <Menu.Target>
@@ -136,8 +136,7 @@ export const Navbar = () => {
             </Menu.Item>
 
             <hr />
-            <Menu.Item>
-              {" "}
+            <Menu.Item>\
               <span
                 className={`font-["Montserrat"] text-[12px] font-[500]  text-white cursor-pointer active:font-[700] ${
                   route === "works" && "font-[700]"

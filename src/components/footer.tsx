@@ -20,7 +20,7 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col gap-[8px]">
             <p
-              className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+              className={`text-[16px] font-[500] cursor-pointer active:font-[700]  ${
                 route === "home" && "font-[700]"
               }`}
               onClick={() => {
@@ -31,7 +31,7 @@ export const Footer = () => {
               Home
             </p>
             <p
-              className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+              className={`text-[16px] font-[500] cursor-pointer active:font-[700] max-[800px]:text-[12px]  ${
                 route === "works" && "font-[700]"
               }`}
               onClick={() => {
@@ -42,7 +42,7 @@ export const Footer = () => {
               Works
             </p>
             <p
-              className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+              className={`text-[16px] max-[800px]:text-[12px] font-[500] cursor-pointer active:font-[700] ${
                 route === "gallery" && "font-[700]"
               }`}
               onClick={() => {
@@ -53,7 +53,7 @@ export const Footer = () => {
               Gallery
             </p>
             <p
-              className={`text-[16px] font-[500] cursor-pointer active:font-[700] ${
+              className={`text-[16px] max-[800px]:text-[12px] cursor-pointer active:font-[700] ${
                 route === "profile" && "font-[700]"
               }`}
               onClick={() => {

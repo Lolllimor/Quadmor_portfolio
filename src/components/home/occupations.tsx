@@ -13,7 +13,7 @@ export const Occupations = () => {
           className="max-[800px]:hidden max-[1024px]:h-[30px]"
         />
       </div>
-      <div className="flex flex-col h-full w-full pl-[45px] max-[800px]:pl-0 border-l border-white">
+      <div className="flex flex-col h-full w-full pl-[45px] max-[800px]:pl-0 max-[800px]:border-l-0 border-l border-white">
         <div className="grid grid-cols-2  w-[100%] justify-evenly ">
           <div className="flex flex-col gap-[24px] pr-[20px]  border-r border-white max-[800px]:pr-[8px]">
             <p className="text-[32px] font-[600] max-[800px]:text-[16px] max-[1024px]:text-[26px]">

@@ -11,6 +11,7 @@ export const Articles = () => {
     {
       name: 'DESIGN',
       topic: 'Beyond Design: The Strategic Redesign of Pouchii App',
+      url: '',
       paragraph:
         'Excited to share this piece on the strategic re-design journey of Pouchii App, highlighting how innovative design thinking has transformed user experience... ',
     },
@@ -63,6 +64,7 @@ export const Articles = () => {
       <div className="pt-[40px] gap-[40px] flex overflow-x-auto no-scrollbar w-full">
         {articleData.map((item, idx) => (
           <ArticleCard
+            url={item.url}
             key={idx}
             name={item.name}
             paragraph={item.paragraph}

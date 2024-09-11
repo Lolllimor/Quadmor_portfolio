@@ -1,12 +1,12 @@
-import { Footer } from "@/footer";
-import { useRouter } from "next/router";
-import React from "react";
+import { Footer } from '@/footer';
+import { useRouter } from 'next/router';
+import React from 'react';
 import {
   BiSolidDownArrow,
   BiSolidLeftArrow,
   BiSolidRightArrow,
   BiSolidUpArrow,
-} from "react-icons/bi";
+} from 'react-icons/bi';
 
 const Profile = () => {
   const { query } = useRouter();
@@ -38,24 +38,45 @@ const Profile = () => {
       </div>
       <div className="h-[486px] flex mb-[80px] max-[325px]:h-fit max-[426px]:flex-col-reverse max-[768px]:h-full max-[426px]:gap-[46px]  max-[376px]:gap-[16px] max-[376px]:mb-[40px] max-[1024px]:h-fit">
         <div className="w-[50%] gap-[60px] flex items-end h-full pl-[70px] max-[426px]:gap-[10px] max-[426px]:pl-0 max-[325px]:p-[24px] max-[325px]:w-[88%] max-[768px]:h-auto max-[1024px]:h-auto max-[1025px]:pl-0 max-[1024px]:w-[40%]">
-          <img
-            height={65}
-            width={65}
-            className="max-h-[65px] max-[325px]:h-[12px] max-[1024px]:h-[38px] max-[1024px]:w-[38px] max-[426px]:w-[24px] max-[426px]:h-[24px] max-[376px]:h-[16px] max-[376px]:w-[16px]"
-            src="/images/insta.png"
-          />
-          <img
-            height={65}
-            width={65}
-            className="max-h-[65px] max-[325px]:h-[12px] max-[1024px]:h-[40px] max-[1024px]:w-[40px] max-[426px]:w-[24px] max-[426px]:h-[24px]  max-[376px]:h-[16px] max-[376px]:w-[16px]"
-            src="/images/twit.png"
-          />
-          <img
-            height={65}
-            width={65}
-            className="max-h-[65px] max-[325px]:h-[12px] max-[1024px]:w-[40px] max-[1024px]:h-[40px] max-[426px]:w-[24px] max-[426px]:h-[24px]  max-[376px]:h-[16px] max-[376px]:w-[16px]"
-            src="/images/link.png"
-          />
+          <a
+            href="https://www.instagram.com/quadmor/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
+            <img
+              height={65}
+              width={65}
+              className="max-h-[65px] max-[325px]:h-[12px] max-[1024px]:h-[38px] max-[1024px]:w-[38px] max-[426px]:w-[24px] max-[426px]:h-[24px] max-[376px]:h-[16px] max-[376px]:w-[16px]"
+              src="/images/insta.png"
+            />
+          </a>
+          <a
+            href="https://x.com/Quadmor_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
+            <img
+              height={65}
+              width={65}
+              className="max-h-[65px] max-[325px]:h-[12px] max-[1024px]:h-[40px] max-[1024px]:w-[40px] max-[426px]:w-[24px] max-[426px]:h-[24px]  max-[376px]:h-[16px] max-[376px]:w-[16px]"
+              src="/images/twit.png"
+            />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/quadmor/"
+            className="cursor-pointer"
+          >
+            <img
+              height={65}
+              width={65}
+              className="max-h-[65px] max-[325px]:h-[12px] max-[1024px]:w-[40px] max-[1024px]:h-[40px] max-[426px]:w-[24px] max-[426px]:h-[24px]  max-[376px]:h-[16px] max-[376px]:w-[16px]"
+              src="/images/link.png"
+            />
+          </a>
         </div>
         <div className="w-[50%] bg-white h-full max-[1024px]:w-[60%] max-[1024px]:h-fit max-[768px]:h-fit rounded-[48px] max-[325px]:rounded-[25px] p-[50px] flex flex-col  items-center justify-center max-[325px]:w-[88%] max-[325px]:p-[24px] gap-[15px]  max-[768px]:p-[20px] max-[768px]:rounded-[18px] max-[426px]:w-[100%] max-[376px]:w-[100%] max-[376px]:rounded-[16px] max-[1024px]:p-[40px]">
           <p className="text-[20px] font-medium text-black h-full w-full leading-[36px] max-[325px]:text-[12px] max-[325px]:leading-[19px] max-[1024px]:text-[16px] max-[1024px]:leading-[25px] max-[768px]:text-[14px] max-[768px]:leading-[18px] max-[768px]:h-fit max-[1024px]:h-fit max-[426px]:text-[12px]">
@@ -102,7 +123,7 @@ const Profile = () => {
           </div>
           <div className="h-[88px] w-full border border-[#fff] rounded-[16px] max-[325px]:rounded-[25px] px-[36px] max-[768px]:flex  max-[768px]:items-center py-[26px] max-[1024px]:h-fit max-[1024px]:py-[16px] max-[768px]:px-[12px] max-[768px]:h-[48px] max-[768px]:rounded-[10px] max-[426px]:rounded-[5px] max-[426px]:px-[8px] max-[426px]:py-[2px] max-[376px]:h-[16px] max-[376px]:rounded-[5px] ">
             <p className="text-[24px] font-[700] max-[1024px]:text-[20px] max-[768px]:text-[14px] max-[426px]:text-[10px] max-[376px]:text-[6px]">
-              Shoot me an email via{" "}
+              Shoot me an email via{' '}
               <span className="text-[#F0FE6D]">Quadmor@hotmail.com</span>
             </p>
           </div>

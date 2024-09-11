@@ -91,13 +91,10 @@ const SubWork = () => {
     if (typeof window !== 'undefined') {
       const handleResize = () => setSize(window.innerWidth);
 
-      // Set the initial size
       handleResize();
 
-      // Add event listener
       window.addEventListener('resize', handleResize);
 
-      // Cleanup event listener on component unmount
       return () => {
         window.removeEventListener('resize', handleResize);
       };
@@ -131,7 +128,7 @@ const SubWork = () => {
           {query.works === 'Graphics Design'
             ? graphics.map((item, idx) =>
                 size && size < 650 ? (
-                  <div className="grid grid-cols-2 justify-evenly max-[433px]:flex max-[433px]:flex-col  ">
+                  <a href={item.link} className="grid grid-cols-2 justify-evenly max-[433px]:flex max-[433px]:flex-col  ">
                     <div className="mb-[20px] max-[480px]:mb-[10px] flex flex-col gap-[10px]  items-center ">
                       <div className="rounded-[16px] border  border-white w-fit h-fit max-[610px]:rounded-[12px] max-[565px]:rounded-[10px]">
                         <img
@@ -143,7 +140,7 @@ const SubWork = () => {
                         {item.title}
                       </p>
                     </div>
-                  </div>
+                  </a>
                 ) : (
                   <div
                     key={idx}

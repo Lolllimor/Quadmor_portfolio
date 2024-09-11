@@ -1,8 +1,8 @@
-import { selectedRouteAtom } from "@/pages/api/query_store";
-import { usePortal } from "@ibnlanre/portal";
-import { Button, Menu, Text } from "@mantine/core";
-import { useRouter } from "next/router";
-import { IoMenu } from "react-icons/io5";
+import { selectedRouteAtom } from '@/pages/api/query_store';
+import { usePortal } from '@ibnlanre/portal';
+import { Button, Menu, Text } from '@mantine/core';
+import { useRouter } from 'next/router';
+import { IoMenu } from 'react-icons/io5';
 
 export const Navbar = () => {
   const { push } = useRouter();
@@ -15,51 +15,51 @@ export const Navbar = () => {
           className="max-[800px]:h-[21px] max-[1024px]:h-[41px]"
           src="/images/sig.png"
           onClick={() => {
-            setRoute("home");
-            push("/");
+            setRoute('home');
+            push('/');
           }}
         />
         <div className="flex w-[460px] justify-between max-[1000px]:hidden max-[1024px]:w-[350px]">
           <span
             className={`text-[16px] font-[500] cursor-pointer active:font-[700]  max-[1024px]:text-[14px]  ${
-              route === "case" && "font-[700]"
+              route === 'case' && 'font-[700]'
             }`}
             onClick={() => {
-              setRoute("case");
-              push("/");
+              setRoute('case');
+              push('/');
             }}
           >
             Case Studies
           </span>
           <span
             className={`text-[16px] font-[500] cursor-pointer active:font-[700] max-[1024px]:text-[14px] ${
-              route === "profile" && "font-[700]"
+              route === 'profile' && 'font-[700]'
             }`}
             onClick={() => {
-              setRoute("profile");
-              push("/");
+              setRoute('profile');
+              push('/');
             }}
           >
             Profile
           </span>
           <span
             className={`text-[16px] font-[500] cursor-pointer active:font-[700] max-[1024px]:text-[14px] ${
-              route === "gallery" && "font-[700]"
+              route === 'gallery' && 'font-[700]'
             }`}
             onClick={() => {
-              setRoute("gallery");
-              push("/");
+              setRoute('gallery');
+              push('/');
             }}
           >
             Gallery
           </span>
           <span
             className={`text-[16px] font-[500] cursor-pointer active:font-[700] max-[1024px]:text-[14px] ${
-              route === "works" && "font-[700]"
+              route === 'works' && 'font-[700]'
             }`}
             onClick={() => {
-              setRoute("works");
-              push("/");
+              setRoute('works');
+              push('/');
             }}
           >
             Works
@@ -82,8 +82,8 @@ export const Navbar = () => {
           position="bottom-end"
           classNames={{
             dropdown:
-              "border border-white rounded-0 py-[16px] px-[24px] bg-[#2B2C2E] gap-[22px] flex flex-col ",
-            item: "bg-tranparent hover:bg-transparent w-full p-0 pb-[8px] pt-[8px] first:pt-0 ",
+              'border border-white rounded-0 py-[16px] px-[24px] bg-[#2B2C2E] gap-[22px] flex flex-col ',
+            item: 'bg-tranparent hover:bg-transparent w-full p-0 pb-[8px] pt-[8px] first:pt-0 ',
           }}
         >
           <Menu.Target>
@@ -95,11 +95,11 @@ export const Navbar = () => {
             <Menu.Item>
               <p
                 className={` font-["Montserrat"] text-[12px] text-white font-[500] cursor-pointer active:font-[700]  ${
-                  route === "case" && "font-[700]"
+                  route === 'case' && 'font-[700]'
                 }`}
                 onClick={() => {
-                  setRoute("case");
-                  push("/");
+                  setRoute('case');
+                  push('/');
                 }}
               >
                 Case Studies
@@ -109,11 +109,11 @@ export const Navbar = () => {
             <Menu.Item>
               <span
                 className={`font-["Montserrat"] text-[12px] font-[500] text-white  cursor-pointer active:font-[700]    ${
-                  route === "profile" && "font-[700]"
+                  route === 'profile' && 'font-[700]'
                 }`}
                 onClick={() => {
-                  setRoute("profile");
-                  push("/");
+                  setRoute('profile');
+                  push('/');
                 }}
               >
                 Profile
@@ -124,11 +124,11 @@ export const Navbar = () => {
             <Menu.Item>
               <span
                 className={`font-["Montserrat"] text-[12px] font-[500]  text-white cursor-pointer active:font-[700]  pb-2  ${
-                  route === "gallery" && "font-[700]"
+                  route === 'gallery' && 'font-[700]'
                 }`}
                 onClick={() => {
-                  setRoute("gallery");
-                  push("/");
+                  setRoute('gallery');
+                  push('/');
                 }}
               >
                 Gallery
@@ -136,14 +136,14 @@ export const Navbar = () => {
             </Menu.Item>
 
             <hr />
-            <Menu.Item>\
+            <Menu.Item>
               <span
                 className={`font-["Montserrat"] text-[12px] font-[500]  text-white cursor-pointer active:font-[700] ${
-                  route === "works" && "font-[700]"
+                  route === 'works' && 'font-[700]'
                 }`}
                 onClick={() => {
-                  setRoute("works");
-                  push("/");
+                  setRoute('works');
+                  push('/');
                 }}
               >
                 Works

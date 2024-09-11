@@ -1,112 +1,112 @@
-import { Footer } from "@/footer";
-import { Navbar } from "@/navbar";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
-import { CiShare1 } from "react-icons/ci";
-import { IoIosArrowForward } from "react-icons/io";
+import { Footer } from '@/footer';
+import { Navbar } from '@/navbar';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
+import { CiShare1 } from 'react-icons/ci';
+import { IoIosArrowForward } from 'react-icons/io';
 
 const SubWork = () => {
   const { back, push, query } = useRouter();
 
   const graphics = [
     {
-      title: "TWISCO Out of Home Ads",
+      title: 'TWISCO Out of Home Ads',
       paragraph:
-        "The campaign theme for this project was “Power your Dreams”, and the designs where created to resonate the copies associated with them, while still emphasizing on the theme that parent can help their children power their dream.",
-      img: "/images/twisco.png",
-      link: "https://drive.google.com/file/d/1WtuOn7CySIaIxyo8tKIEQ1oESmuy-4kg/view?usp=sharing",
+        'The campaign theme for this project was “Power your Dreams”, and the designs where created to resonate the copies associated with them, while still emphasizing on the theme that parent can help their children power their dream.',
+      img: '/images/twisco.png',
+      link: 'https://drive.google.com/file/d/1WtuOn7CySIaIxyo8tKIEQ1oESmuy-4kg/view?usp=sharing',
     },
     {
-      title: "PRAMIE GENT SALON",
+      title: 'PRAMIE GENT SALON',
       paragraph:
-        "I served as the Art Director for Pramie Gent Salon during which I provided visual guide & direction that expressed the luxurious identity of the brand. I provided multiple  marketing designs, brand asset & messaging strategies for the brand. Here are a few...",
-      img: "/images/praime.png",
-      link: "https://drive.google.com/file/d/1TRzeHMKpf1FabZiILpmUozCiHmeTEcL5/view?usp=sharing",
+        'I served as the Art Director for Pramie Gent Salon during which I provided visual guide & direction that expressed the luxurious identity of the brand. I provided multiple  marketing designs, brand asset & messaging strategies for the brand. Here are a few...',
+      img: '/images/praime.png',
+      link: 'https://drive.google.com/file/d/1TRzeHMKpf1FabZiILpmUozCiHmeTEcL5/view?usp=sharing',
     },
     {
-      title: "NEW AGE Out of Home Ads",
+      title: 'NEW AGE Out of Home Ads',
       paragraph:
-        "New Age known for providing Phone Chargers and Ear Accessories came to us with the goal of helping them introduce their new EarPod Products to the market. The designs and copy focused on highlighting the features of the product, and the kind of experience that comes with using them.",
-      img: "/images/new_age.png",
-      link: "https://drive.google.com/file/d/1OdpCS8WDFr_F8CeW3h8qMwLOhfjr2K2L/view?usp=sharing",
+        'New Age known for providing Phone Chargers and Ear Accessories came to us with the goal of helping them introduce their new EarPod Products to the market. The designs and copy focused on highlighting the features of the product, and the kind of experience that comes with using them.',
+      img: '/images/new_age.png',
+      link: 'https://drive.google.com/file/d/1OdpCS8WDFr_F8CeW3h8qMwLOhfjr2K2L/view?usp=sharing',
     },
     {
-      title: "CHAMDOR WINE  ",
+      title: 'CHAMDOR WINE  ',
       paragraph:
-        "Chamdor wine wanted remind their audience about how inclusive they are, and how their product fits perfectly for more than one celebratory Occassion. These designs were made to go with “love” events happening in the first quarter of the year. ",
-      img: "/images/chamdor.png",
-      link: "https://drive.google.com/file/d/1q9o7XNc3a-aTvbIOuGjnTJTKHvsvQ0T4/view?usp=sharing",
+        'Chamdor wine wanted remind their audience about how inclusive they are, and how their product fits perfectly for more than one celebratory Occassion. These designs were made to go with “love” events happening in the first quarter of the year. ',
+      img: '/images/chamdor.png',
+      link: 'https://drive.google.com/file/d/1q9o7XNc3a-aTvbIOuGjnTJTKHvsvQ0T4/view?usp=sharing',
     },
     {
-      title: "JINJER & MANGO SOCIAL DESIGN",
+      title: 'JINJER & MANGO SOCIAL DESIGN',
       paragraph:
-        "These are social media designs for an imaginary fintech brand. ",
-      img: "/images/jinjer.png",
-      link: "https://drive.google.com/file/d/1DztRKkmEBAds1ykT0ePJz0EKgFFRQnC1/view?usp=sharing",
+        'These are social media designs for an imaginary fintech brand. ',
+      img: '/images/jinjer.png',
+      link: 'https://drive.google.com/file/d/1DztRKkmEBAds1ykT0ePJz0EKgFFRQnC1/view?usp=sharing',
     },
     {
-      title: "1940 BEER LAGER",
+      title: '1940 BEER LAGER',
       paragraph:
-        "These are marketing materials for a psedo beer brand. The Product and Packaging was created by a friend, after which I worked on these marketing designs. The scenes used were from the movies; “The harder they fall” and “Django Unchained”",
-      img: "/images/lager.png",
-      link: "https://www.behance.net/gallery/136876875/1940-Premium-Lager",
+        'These are marketing materials for a psedo beer brand. The Product and Packaging was created by a friend, after which I worked on these marketing designs. The scenes used were from the movies; “The harder they fall” and “Django Unchained”',
+      img: '/images/lager.png',
+      link: 'https://www.behance.net/gallery/136876875/1940-Premium-Lager',
     },
   ];
 
   const ui = [
     {
-      type: "App Redesign 2024 ",
-      name: "Pouchii Redesign",
-      imgSrc: "/images/pochi-bg.svg",
+      type: 'App Redesign 2024 ',
+      name: 'Pouchii Redesign',
+      imgSrc: '/images/pochi-bg.svg',
     },
     {
-      type: "COVERLY 2021",
-      name: "Cover Letter Generator",
-      imgSrc: "/images/coverly-bg.svg",
+      type: 'COVERLY 2021',
+      name: 'Cover Letter Generator',
+      imgSrc: '/images/coverly-bg.svg',
     },
     {
-      type: "Administrative Dashboard Redesign",
-      name: "Cover Letter Generator",
-      imgSrc: "/images/add.svg",
+      type: 'Administrative Dashboard Redesign',
+      name: 'Cover Letter Generator',
+      imgSrc: '/images/add.svg',
     },
     {
-      type: "Fundraising Website Redesign",
-      name: "Fundraising Website Redesign",
-      imgSrc: "/images/coming-soon.svg",
+      type: 'Fundraising Website Redesign',
+      name: 'Fundraising Website Redesign',
+      imgSrc: '/images/coming-soon.svg',
     },
   ];
   const illustrate = [
     {
-      title: "GOD’S EYE PROJECT",
+      title: 'GOD’S EYE PROJECT',
       paragraph:
-        "God’s Eye is a collection of  five art pieces, each of which presents a unique perspective on success stories from an aerial view. ",
-      img: "/images/hand.png",
-      link: "https://www.behance.net/gallery/185031767/Gods-Eye",
+        'God’s Eye is a collection of  five art pieces, each of which presents a unique perspective on success stories from an aerial view. ',
+      img: '/images/hand.png',
+      link: 'https://www.behance.net/gallery/185031767/Gods-Eye',
     },
   ];
 
   const [size, setSize] = useState<number | undefined>(undefined);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       const handleResize = () => setSize(window.innerWidth);
 
       // Set the initial size
       handleResize();
 
       // Add event listener
-      window.addEventListener("resize", handleResize);
+      window.addEventListener('resize', handleResize);
 
       // Cleanup event listener on component unmount
       return () => {
-        window.removeEventListener("resize", handleResize);
+        window.removeEventListener('resize', handleResize);
       };
     }
   }, []);
 
   return (
     <>
-      <main className="px-[88px] pt-[36px] flex flex-col items-center ">
+      <main className="px-[88px] pt-[36px] flex flex-col items-center max-[500px]:px-[24px]">
         <Navbar />
         <div className="flex py-[30px] w-full justify-start max-[480px]:py-[15px]">
           <p
@@ -128,7 +128,7 @@ const SubWork = () => {
         </div>
 
         <div className="flex flex-col gap-[48px] max-[650px]:gap-[20px] w-full pt-[40px]">
-          {query.works === "Graphics Design"
+          {query.works === 'Graphics Design'
             ? graphics.map((item, idx) =>
                 size && size < 650 ? (
                   <div className="grid grid-cols-2 justify-evenly max-[433px]:flex max-[433px]:flex-col  ">
@@ -181,7 +181,7 @@ const SubWork = () => {
                   </div>
                 )
               )
-            : query.works === "UI / UX Design"
+            : query.works === 'UI / UX Design'
             ? ui.map((item, idx) => (
                 <div className="w-full flex flex-col gap-5">
                   <p className="text-[20px] font-[700]">{item.name}</p>

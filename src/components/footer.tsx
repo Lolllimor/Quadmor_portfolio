@@ -1,6 +1,6 @@
-import { selectedRouteAtom } from "@/pages/api/query_store";
-import { usePortal } from "@ibnlanre/portal";
-import { useRouter } from "next/router";
+import { selectedRouteAtom } from '@/pages/api/query_store';
+import { usePortal } from '@ibnlanre/portal';
+import { useRouter } from 'next/router';
 
 export const Footer = () => {
   const { push } = useRouter();
@@ -21,44 +21,44 @@ export const Footer = () => {
           <div className="flex flex-col gap-[8px]">
             <p
               className={`text-[16px] font-[500] cursor-pointer active:font-[700]  ${
-                route === "home" && "font-[700]"
+                route === 'home' && 'font-[700]'
               }`}
               onClick={() => {
-                setRoute("home");
-                push("/");
+                setRoute('home');
+                push('/');
               }}
             >
               Home
             </p>
             <p
               className={`text-[16px] font-[500] cursor-pointer active:font-[700] max-[800px]:text-[12px]  ${
-                route === "works" && "font-[700]"
+                route === 'works' && 'font-[700]'
               }`}
               onClick={() => {
-                setRoute("works");
-                push("/");
+                setRoute('works');
+                push('/');
               }}
             >
               Works
             </p>
             <p
               className={`text-[16px] max-[800px]:text-[12px] font-[500] cursor-pointer active:font-[700] ${
-                route === "gallery" && "font-[700]"
+                route === 'gallery' && 'font-[700]'
               }`}
               onClick={() => {
-                setRoute("gallery");
-                push("/");
+                setRoute('gallery');
+                push('/');
               }}
             >
               Gallery
             </p>
             <p
               className={`text-[16px] max-[800px]:text-[12px] cursor-pointer active:font-[700] ${
-                route === "profile" && "font-[700]"
+                route === 'profile' && 'font-[700]'
               }`}
               onClick={() => {
-                setRoute("profile");
-                push("/");
+                setRoute('profile');
+                push('/');
               }}
             >
               Profile
@@ -96,32 +96,46 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="gap-[24px] flex max-sm:gap-[6px]">
+        <div className="gap-[24px] flex max-sm:gap-[10px]">
           <a
             href="https://www.instagram.com/quadmor/"
             target="_blank"
             rel="noopener noreferrer"
+            className="cursor-pointer"
           >
             <img
               height={32}
               width={32}
-              className="max-h-[32px] max-sm:h-[9px] max-sm:w-[9px]"
+              className="max-h-[32px] max-sm:h-[16px] max-sm:w-[16px]"
               src="/images/insta.png"
             />
           </a>
-
-          <img
-            height={32}
-            width={32}
-            className="max-h-[32px] max-sm:h-[9px] max-sm:w-[9px]"
-            src="/images/twit.png"
-          />
-          <img
-            height={32}
-            width={32}
-            className="max-h-[32px] max-sm:h-[9px] max-sm:w-[9px]"
-            src="/images/link.png"
-          />
+          <a
+            href="https://x.com/Quadmor_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
+            <img
+              height={32}
+              width={32}
+              className="max-h-[32px] max-sm:h-[16px] max-sm:w-[16px]"
+              src="/images/twit.png"
+            />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/quadmor/"
+            className="cursor-pointer"
+          >
+            <img
+              height={32}
+              width={32}
+              className="max-h-[32px] max-sm:h-[16px] max-sm:w-[16px]"
+              src="/images/link.png"
+            />
+          </a>
         </div>
       </div>
       <div className="flex gap-[8px] pt-[36px] max-[800px]:hidden ">

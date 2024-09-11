@@ -1,47 +1,65 @@
-import { CiShare1 } from "react-icons/ci";
-import { IoMdDownload } from "react-icons/io";
-import { Flex, Modal } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
+import { CiShare1 } from 'react-icons/ci';
+import { IoMdDownload } from 'react-icons/io';
+import { Modal } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import { SetStateAction, useState } from 'react';
 
 const Gallery = () => {
   const [opened, { open, close }] = useDisclosure(false);
+  const [currentImage, setCurrentImage] = useState<{
+    hover: string;
+    imageSrc: string;
+    title: string;
+    month: string;
+    year: string;
+  }>({
+    hover: '',
+    imageSrc: '',
+    title: '',
+    month: '',
+    year: '',
+  });
   const galleryImages = [
     {
-      hover: "/images/full-flower.jpeg",
-      imageSrc: "/images/flowers.jpeg",
-      title: "Soulful Sunflower",
-      month: "August",
-      year: "2022",
+      hover: '/images/full-flower.jpeg',
+      imageSrc: '/images/flowers.jpeg',
+      title: 'Soulful Sunflower',
+      month: 'August',
+      year: '2022',
     },
     {
-      hover: "/images/full-kidda.jpeg",
-      imageSrc: "/images/kidda.jpeg",
-      title: "Kida Kudzz",
-      month: "August",
-      year: "2022",
+      hover: '/images/full-kidda.jpeg',
+      imageSrc: '/images/kidda.jpeg',
+      title: 'Kida Kudzz',
+      month: 'August',
+      year: '2022',
     },
     {
-      hover: "/images/full-red.jpeg",
-      imageSrc: "/images/red.jpeg",
-      title: "Red (Action FIgure)",
-      month: "August",
-      year: "2022",
+      hover: '/images/full-red.jpeg',
+      imageSrc: '/images/red.jpeg',
+      title: 'Red (Action FIgure)',
+      month: 'August',
+      year: '2022',
     },
     {
-      hover: "/images/full-bloom.png",
-      imageSrc: "/images/bloom.png",
-      title: "Bloom EOTP",
-      month: "August",
-      year: "2022",
+      hover: '/images/full-bloom.png',
+      imageSrc: '/images/bloom.png',
+      title: 'Bloom EOTP',
+      month: 'August',
+      year: '2022',
     },
     {
-      hover: "/images/full-fat.jpeg",
-      imageSrc: "/images/fat.jpeg",
-      title: "Fat Mando",
-      month: "August",
-      year: "2022",
+      hover: '/images/full-fat.jpeg',
+      imageSrc: '/images/fat.jpeg',
+      title: 'Fat Mando',
+      month: 'August',
+      year: '2022',
     },
   ];
+  const handleImageClick = (image: SetStateAction<any>) => {
+    setCurrentImage(image);
+    open();
+  };
   return (
     <div className="flex flex-col mt-[50px]">
       <p className="text-[24px] font-[700]">GALLERY</p>
@@ -53,7 +71,7 @@ const Gallery = () => {
           >
             <CiShare1
               color="#fff"
-              onClick={open}
+              onClick={() => handleImageClick(item)}
               size={24}
               className=" top-[10px] left-[10px] max-sm:h-[7px] absolute cursor-pointer max-[637px]:w-[16px] max-[637px]:h-[16px]"
             />
@@ -83,7 +101,11 @@ const Gallery = () => {
               }}
             >
               <div className="no-scrollbar">
-                <img src={item.hover} className="h-fit w-fit" />
+                <img
+                  src={currentImage.hover}
+                  className="h-fit w-fit max-[500px]:w-full max-[500px]:h-auto"
+                  alt={currentImage.title}
+                />
               </div>
             </Modal>
           </div>

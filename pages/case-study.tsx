@@ -1,28 +1,27 @@
-import { Button, Flex, Text } from "@mantine/core";
-import React, { useState } from "react";
-import { IoMdOpen } from "react-icons/io";
+import { Flex } from '@mantine/core';
+import React, { useState } from 'react';
 
 const CaseStudy = () => {
   const data = [
     {
-      type: "App Redesign 2024 ",
-      name: "Pouchii Redesign",
-      imgSrc: "/images/pochi-bg.svg",
+      type: 'App Redesign 2024 ',
+      name: 'Pouchii Redesign',
+      imgSrc: '/images/pochi-bg.svg',
     },
     {
-      type: "COVERLY 2021",
-      name: "Cover Letter Generator",
-      imgSrc: "/images/coverly-bg.svg",
+      type: 'COVERLY 2021',
+      name: 'COVERLY - A Cover Letter Generator',
+      imgSrc: '/images/coverly-bg.svg',
     },
     {
-      type: "Administrative Dashboard Redesign",
-      name: "Cover Letter Generator",
-      imgSrc: "/images/add.svg",
+      type: 'Administrative Dashboard Redesign',
+      name: 'Administrative Dashboard Redesign',
+      imgSrc: '/images/add.svg',
     },
     {
-      type: "Fundraising Website Redesign",
-      name: "Fundraising Website Redesign",
-      imgSrc: "/images/coming-soon.svg",
+      type: 'Fundraising Website Redesign',
+      name: 'Fundraising Website Redesign',
+      imgSrc: '/images/coming-soon.svg',
     },
   ];
 
